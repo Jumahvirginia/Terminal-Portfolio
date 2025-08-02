@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juma's Terminal-Portfolio</title>
+
+  
+  <!-- Link the CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Smooth scroll behavior -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Terminal Window Container -->
+  <div class="terminal-window">
+
+    <!-- Terminal Top Bar, Navigation Dots -->
+    <div class="terminal-top-bar">
+  <a href="#about" class="dot-group">
+    <div class="dot red"></div>
+    <span class="dot-label">About</span>
+  </a>
+  <a href="#education" class="dot-group">
+    <div class="dot gold"></div>
+    <span class="dot-label">Education</span>
+  </a>
+  <a href="#skills" class="dot-group">
+    <div class="dot yellow"></div>
+    <span class="dot-label">Skills</span>
+  </a>
+  <a href="#interests" class="dot-group">
+    <div class="dot green"></div>
+    <span class="dot-label">Interests</span>
+  </a>
+  <a href="#projects" class="dot-group">
+    <div class="dot teal"></div>
+    <span class="dot-label">Projects</span>
+  </a>
+  <a href="#contact" class="dot-group">
+    <div class="dot violet"></div>
+    <span class="dot-label">Contact</span>
+  </a>
+</div>
+
+
+
+    <!--Terminal Content Starts -->
+    <div class="terminal-content">
+
+      <!-- Optional: Cursor Hover Effect -->
+      <div class="cursor">|</div>
+
+      <!-- About Section -->
+      <section id="about">
+        <p><span class="command"><span class="typing-effect">Who am I</span></span></p>
+
+        <div class="about-wrapper">
+          <img src="ITgirl.jpeg" alt="Royalty's Portrait" class="profile-image" />
+          <pre class="bio">
+  Hello 😊, I’m <strong>Virginia Juma👑</strong>.
+  -I’m a passionate and growing developer who loves designingand creating
+   clean,meaningful digital experiences. 
+  -My journey in tech is driven by creativity,curiosity and the joy of 
+   learning something new every day.
+  -I believe in building with purpose,growing through challenges,
+   and enjoying every step of the process.
+          </pre>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <p><h3> <span class="command">Education --cv</span></h3></p>
+        <pre class="resume-output">
+$ MaryHill_High_School
+> 📘 High School Certificate
+> 🗓️ 2019 - 2022
+
+$ Mount_Kenya_University
+> 🎓 BSc in Information Technology
+> 🗓️ 2023 - Present
+> ⚙️ Currently deep-diving into full-stack dev
+
+$ Power_Learn_Project
+> 💻 Software Development Program
+> 🗓️ Joined July 2025
+> 🔎 Focus: Practical coding, real-world problem solving
+        </pre>
+        <a href="JumahVirginiaResume.pdf" class="download-btn" download>Download CV </a>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="terminal-box">
+  <p><h3> <span class="command">Skills --list</span></h3></p>
+  <p>> HTML ............. ████████ 85%</p>
+  <p>> CSS .............. ██████ 70%</p>
+  <p>> JavaScript ....... ███████ 75%</p>
+  <p>> C++ .............. █████████ 90%</p>
+  <p>> Java ............. █████ 65%</p>
+  <p>> Soft Skills ...... ████████ 85%</p>
+</section>
+
+
+      <!-- Interests Section -->
+      <section id="interests">
+        <p><h3> <span class="command">Interests --tech</span></h3></p>
+        <pre class="interests-log">
+> Exploring cool websites andinteresting AI tools.
+> Designing unique UI/UX experiences
+> Attending tech meetups and hackathons
+> Exploring the Web3 space
+        </pre>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <p><h> <span class="command">Projects --gallery</span></h3></p>
+        <div class="projects-grid">
+
+          <!-- Project Cards -->
+          <div class="project-card">
+            <h3>TicTacLuxe</h3>
+            <p>A simple Tic-Tac-Toe game with luxe aesthetic.This project combines fun gameplay with luxe design and smooth interactivity.</p>
+            <a href="https://tic-tac-luxe.netlify.app/">🔗View Project </a>
+          </div>
+
+            <div class="project-card">
+                <h3>Basic-Calculator</h3>
+                <p>A simple calculator that performs basic calculations such as addition,subtraction,division & multiplication.</p>
+                <a href="https://thebasiccalculator.netlify.app/">🔗View Project</a>
+            </div>
+
+            <div class="project-card">
+            <h3>MoodBlocks</h3>
+            <p>A vibrant collection of mood-themed color palettes displayed as cards.Great for visual inspiration & aesthetic layouts.</p>
+            <a href="https://github.com/Jumahvirginia/MoodBlocks.git">🔗View Project</a>
+          </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+  <h3><span class="command">Contact --form</span></h3>
+  <div class="form-wrapper">
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</section>
+
+
+
+      <!-- Social Media & Blog -->
+     <section id="blog">
+        <p><h3> <span class="command">Blog --Code Chronicles</span></h3></p>
+        <p>I document my dev journey;lessons learned, bugs conquered, and the joy of building, one line at a time. From late-night breakthroughs to frustrating errors turned into victories, this blog captures the highs, the bugs, and the breakthroughs as I grow into the developer I’m called to be.</p>
+        <p>Check out the blog <a class="blog-highlight" href="https://medium.com/@jumahvirginia">DevJourney Chronicles</a></p>
+        
+      </section>
+
+      <section id="socials">
+        <p><h3> <span class="command">Socials --list</span></h3></p>
+        <ul class="social-links">
+          <li><a href="https://github.com/Jumahvirginia" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/virginiahjuma/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://x.com/R_Virginiah" target="_blank">X(Twitter)</a></li>
+          <li><a href="https://instagram.com/simply_royaltyy" target="_blank">Instagram</a></li>
+          
+        </ul>
+      </section>
+
+      
+
+    </div> <!-- terminal-content -->
+  </div> <!-- terminal-window -->
+</body>
+</html>
