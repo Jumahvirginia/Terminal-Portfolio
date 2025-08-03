@@ -8,26 +8,7 @@ body {
 
   
 }
-
-/* Tablet and up */
-@media (min-width: 600px) {
-  .section {
-    flex: 1 1 48%; /* Two columns */
-  }
-}
-
-/* Desktop and up */
-@media (min-width: 1024px) {
-  .section {
-    flex: 1 1 30%; /* Three columns */
-  }
-
-  body {
-    padding: 2rem;
-  }
-}
-
-
+/* Terminal Window */
 .terminal-window {
   max-width: 1000px;
   margin: 2rem auto;
@@ -36,14 +17,24 @@ body {
   border: 2px solid rgb(58, 89, 231);
   border-radius: 10px;
   box-shadow: 0 0 20px #2775ebce;
+  width: 90%;
+  box-sizing: border-box;
+  overflow-x: hidden; 
 }
 
 /* Top Bar Dots */
-.terminal-top-bar {
+.terminal-nav-bar {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;         
+  align-items: center;
+  justify-content: flex-start;
 }
+
 
 .dot {
   width: 14px;
@@ -61,10 +52,10 @@ body {
 /* Dot Colors */
 .red    { background-color: #FF4C4C; }
 .gold   { background-color: #FFD700; }
-.yellow { background-color: #dd5adb; }
-.green  { background-color: #88FFC8; }
+.yellow { background-color: #f484f2; }
+.green  { background-color: #50f2a6; }
 .teal   { background-color: #00F0FF; }
-.violet { background-color: #A084E8; }
+.violet { background-color: #926cf1; }
 
 /* Group wrapper for each dot and label */
 .dot-group {
@@ -89,12 +80,6 @@ body {
 
 .dot-group:hover .dot-label {
   color: #00F0FF;
-}
-
-
-/* Cursor Hover */
-.cursor {
-  display: none;
 }
 
 .typing-effect {
@@ -141,6 +126,9 @@ section {
   gap: 2rem;
   margin-top: 1rem;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  
 }
 
 .profile-image {
@@ -157,6 +145,13 @@ section {
   padding: 1rem;
   border-left: 4px solid #00F0FF;
   font-size: 0.95rem;
+  flex: 2 1 400px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 /* Resume */
@@ -166,6 +161,12 @@ section {
   border-left: 4px solid #A084E8;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; 
+  white-space: pre-wrap; 
+  word-wrap: break-word;
 }
 
 .download-btn {
@@ -198,6 +199,12 @@ section {
   padding: 1rem;
   border-left: 4px solid #84d7e8;
   font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 /* Projects */
@@ -226,10 +233,15 @@ section {
 }
 
 .project-card a {
-  color: hsl(175, 71%, 77%);
+  color: hsl(175, 62%, 65%);
   text-decoration: none;
   font-weight: bold;
 }
+.project-card a:hover {
+  color: #F0E2A3;
+  text-shadow: 0 0 8px #ecf1f5a7;
+}
+
 
 /* Contact */
 .contact-form {
