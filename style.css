@@ -5,8 +5,28 @@ body {
   color: #FFFFFF;
   font-family: 'JetBrains Mono', monospace, sans-serif;
   line-height: 1.6;
+
   
 }
+
+/* Tablet and up */
+@media (min-width: 600px) {
+  .section {
+    flex: 1 1 48%; /* Two columns */
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+  .section {
+    flex: 1 1 30%; /* Three columns */
+  }
+
+  body {
+    padding: 2rem;
+  }
+}
+
 
 .terminal-window {
   max-width: 1000px;
